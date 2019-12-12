@@ -9,15 +9,18 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="usr")
-public class User implements Serializable{
+@Table(name = "usr")
+public class User implements Serializable {
 
 	@Id
 	private String userId;
+
 	private String password;
-	private String firsrName;
+
+	private String firstName;
+
 	private String lastName;
-	
+
 	@Enumerated(EnumType.STRING)
 	private RoleName roleName;
 
@@ -37,12 +40,12 @@ public class User implements Serializable{
 		this.password = password;
 	}
 
-	public String getFirsrName() {
-		return firsrName;
+	public String getFirstName() {
+		return firstName;
 	}
 
-	public void setFirsrName(String firsrName) {
-		this.firsrName = firsrName;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 
 	public String getLastName() {

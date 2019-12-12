@@ -7,6 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
 @Entity
 public class MeetingRoom implements Serializable {
 
@@ -15,7 +16,7 @@ public class MeetingRoom implements Serializable {
 	private Integer roomId;
 	
 	private String roomName;
-
+	
 	public Integer getRoomId() {
 		return roomId;
 	}

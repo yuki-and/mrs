@@ -9,6 +9,7 @@ import javax.persistence.Embeddable;
 public class ReservableRoomId implements Serializable {
 
 	private Integer roomId;
+	
 	private LocalDate reservedDate;
 
 	public ReservableRoomId(Integer roomId, LocalDate reservedDate) {
